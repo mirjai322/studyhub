@@ -8,11 +8,14 @@ Setup Instructions for Macbook
 cd /Applications/XAMPP/xamppfiles/htdocs
 git clone https://github.com/mirjai322/studyhub.git 
 
-- Step 3: create db and tables by executing line below 
-./mariadb -h localhost -u root  < /Applications/XAMPP/xamppfiles/htdocs/studyhub/studyhub.sql 
+- Step 4: create db and tables by executing line below 
+/Applications/XAMPP/xamppfiles/bin/mariadb -h localhost -u root  < /Applications/XAMPP/xamppfiles/htdocs/studyhub/studyhub.sql 
 
 
-- Step 4: http:/localhost/studyhub
+- Step 5: http:/localhost/studyhub
+login as attempt@example.com and password is attempt123 
+
+
 
 
  
