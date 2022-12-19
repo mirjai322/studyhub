@@ -1,0 +1,235 @@
+*{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* creates two columns/boxes that floats next to each other -- 70 30 columns of main page */
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+/* right aside for main text 30% */
+aside {
+  float: left;
+  width: 30%;
+  background: #fffafa;
+  padding: 20px;
+  height:100vh;
+}
+
+/* left article for main image 70% */
+article {
+  float: left;
+  padding: none;
+  width: 70%;
+  background-color: #f1f1f1;
+  height:100vh;
+}
+
+/* clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  aside, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* for main nav bar on home page */
+#mainnav {
+  background-color: #b87a7a;
+  padding-right:20px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  height: 60px;
+}
+#main-nav.sticky {
+  position: fixed;
+  top: 0;
+}
+                          
+.nav a { 
+  margin-top:-10px;
+  text-decoration: none;
+  color: #fff5f5;
+  font-weight: bold;
+  font-size:16px;
+}                  
+
+.nav li:hover {
+  background-color: #766565;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+
+.nav li {
+  list-style: none;
+  float: left;  
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* for main text bubble on home page */
+.description {
+  color: #b87a7a;
+  position:relative;
+  top:260px;
+  left:40px;
+}
+
+/* for main image on home page */
+.bg {
+  /* The image used */
+  background-image: url("test1.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* for general study resources page */
+/* content section */
+.nav1 {
+    background-color: #b87a7a;
+    color: #fff5f5;
+    height:200px;
+    width:100%;
+}
+.section1 {
+    background-color:#fff5f5;
+    position:absolute;
+    height:auto; width:100%;
+}
+/* red header section with nav links */
+#one {
+  position: relative;
+  top:40px; left:40px;
+}
+.nav1 a {
+  text-decoration:none;
+  color:#fff5f5
+}
+.nav1 li:hover {
+  background-color: #766565;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+.nav1 li {
+  list-style: none;
+  float: left;  
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* for ap resources page */
+/* content section */
+.nav2 {
+    background-color: #b87a7a;
+    color: #fff5f5;
+    height:200px;
+    width:100%;
+}
+.section2 {
+    background-color:#fff5f5;
+    position: absolute;
+    height:100%; width:100%;
+}
+/* red header section with nav links */
+#two {
+  position: relative;
+  top:40px; left:40px;
+}
+.nav2 a {
+  text-decoration:none;
+  color:#fff5f5
+}
+.nav2 li:hover {
+  background-color: #766565;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+.nav2 li {
+  list-style: none;
+  float: left;  
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* for motivation page */
+/* content section */
+.nav3 {
+    background-color: #b87a7a;
+    color: #fff5f5;
+    height:200px;
+    width:100%;
+}
+.section3 {
+    background-color:#fff5f5;
+    position:absolute;
+    height:auto; width:100%;
+}
+/* red header section with nav links */
+#three {
+  position: relative;
+  top:40px; left:40px;
+}
+.nav3 a {
+  text-decoration: none;
+  color: #fff5f5;
+}
+.nav3 li:hover {
+  background-color: #766565;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+.nav3 li {
+  list-style: none;
+  float: left;  
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* white boxes in subpages for content */
+.white {
+  background-color:white;
+  color:#b87a7a;
+  margin-top:50px;
+  position:relative;
+  margin: auto;
+  width: 80%;
+  border: 3px solid #b87a7a;
+  padding: 20px;
+}
