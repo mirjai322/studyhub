@@ -16,7 +16,11 @@ if(isset($_SESSION["user_id"])){
 <head>
 	<title>Home</title>
 	<meta charset="UTF-8">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  <style>
+  	background-color: #ffd9d9;
+  	color: #fffafa;
+  </style>
 </head>
 <body>
 	<h1>Home</h1>

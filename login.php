@@ -2,8 +2,7 @@
 
 $is_invalid = false;
 
-if($_SERVER["REQUEST_METHOD"] === "POST"){ //what does "post" mean and what is request method?
-	//pretty confused as to what this code block is doing
+if($_SERVER["REQUEST_METHOD"] === "POST"){
 	$mysqli = require __DIR__ . "/database.php";
 	$sql = sprintf("SELECT * FROM user
 					WHERE email = '%s'",

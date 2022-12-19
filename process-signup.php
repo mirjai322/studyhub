@@ -6,7 +6,7 @@ if(empty($_POST["name"])){
 }
 
 
-if(!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){ //what is filter_var and what is filter_validate_email?
+if(!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
 	die("Valid email is required");
 }
 
@@ -14,7 +14,7 @@ if(strlen($_POST["password"])<8){
 	die("Password must be a minimum of 8 characters");
 }
 
-if(!preg_match("/[a-z]/i", $_POST["password"])){ //what is preg_match function?
+if(!preg_match("/[a-z]/i", $_POST["password"])){ 
 	die("Password must contain at least 1 letter");
 }
 
@@ -32,7 +32,7 @@ $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
 $mysqli = require __DIR__ . "/database.php";
 
 $sql = "INSERT INTO user (name, email, password_hash) VALUES (?, ?, ?)";
-$stmt = $mysqli->stmt_init(); //unsure what this is or what it does
+$stmt = $mysqli->stmt_init(); 
 
 if(! $stmt->prepare($sql)){//preparing sql statement for execution -- catch any syntax errors in the sql method (if method returns false, then there is problem)
 	die("SQL error: " . $mysqli->error); //error property of sql object
