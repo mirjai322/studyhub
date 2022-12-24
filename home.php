@@ -31,6 +31,12 @@
       top: 40px;
     }
   </style>
+  <body onload="setTitle()">
+  <script>
+    function setTitle(){
+      document.getElementById("studyhubTitle").innerHTML = "studyhub";
+    }
+  </script>
 </head>
 
 <body onload="message()">
@@ -55,7 +61,7 @@
 
       <aside>
         <div class="description">
-          <h1 style="font-size:50px;">studyhub</h1>
+          <h1 id="studyhubTitle" style="font-size:50px;"></h1>
           <!--inline CSS-->
           <br>
           <h5 style="font-size:16px;">A website full of resources <br> to make studying easier for <br>you.</h5>
