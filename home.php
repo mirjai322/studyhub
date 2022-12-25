@@ -1,4 +1,4 @@
-<?php require __DIR__ . "/session.php"; ?>
+<?php require __DIR__ . "/session.php"; ?><!--//session must be started in order for this page to load, meaning user must have logged in-->
 
 <!DOCTYPE html>
 <html>
@@ -31,16 +31,15 @@
       top: 40px;
     }
   </style>
-  <body onload="setTitle()">
-  <script>
+  <body onload="setTitle()"><!--when page loads, execute function setTitle()-->
+  <script> //internal javascript
     function setTitle(){
-      document.getElementById("studyhubTitle").innerHTML = "studyhub";
+      document.getElementById("studyhubTitle").innerHTML = "studyhub"; //change innerHTML of element with id of studyhubTitle to "studyhub"
     }
   </script>
 </head>
-
-<body onload="message()">
-
+  
+  <!--navigation bar with 3 tabs-->
   <div id="container">
     <div class="nav">
       <header>
@@ -56,12 +55,12 @@
 
     <section>
       <article>
-        <div class="bg"></div>
+        <div class="bg"></div><!--image-->
       </article>
 
       <aside>
         <div class="description">
-          <h1 id="studyhubTitle" style="font-size:50px;"></h1>
+          <h1 id="studyhubTitle" style="font-size:50px;"></h1><!--inner HTML changed in internal javascript-->
           <!--inline CSS-->
           <br>
           <h5 style="font-size:16px;">A website full of resources <br> to make studying easier for <br>you.</h5>

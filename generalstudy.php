@@ -1,4 +1,5 @@
-<?php require __DIR__ . "/session.php"; ?>
+
+<?php require __DIR__ . "/session.php"; ?><!--//session must be started in order for this page to load, meaning user must have logged in-->
 
 <!DOCTYPE html>
 <html>
@@ -16,7 +17,8 @@
       transition: 0.2s ease;
     }
 
-    footer {
+    /*styling footer, internal CSS*/
+    footer { 
       left: 0;
       bottom: 0;
       width: 100%;
