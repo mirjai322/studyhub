@@ -16,6 +16,11 @@ Setup Instructions for Macbook
   - login as attempt@example.com and password is attempt123 
 
 
+-----------
+Contributions
 
+- Charlotte Jen: worked on front-end development - page set-up and design, color scheme, html for the home page, general study resources page, and motivation page, main css for full website
+- Miraya Jain: 
+- 
 
  
