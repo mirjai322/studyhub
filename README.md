@@ -20,6 +20,6 @@ Setup Instructions for Macbook
 Contributions
 
 - Charlotte Jen: worked on front-end development - page set-up and design, color scheme, html for the home page, general study resources page, and motivation page, main css for full website
-- Miraya Jain: Full backend development for website + frontend development -- created relational database on MariaDB system, signup and login page HTML/CSS, server-side validation, client-side validation using JustValidate JavaScript library, SQL injection attack prevention, documented database setup instruction
+- Miraya Jain: Full backend development for website + frontend development -- created relational database on MariaDB system, entry form to record information on database thru signup page, lookup form to extract information thru login page, signup and login page HTML/CSS, server-side validation, client-side validation using JustValidate JavaScript library, SQL injection attack prevention, documented database setup instruction
 
  
