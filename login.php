@@ -39,15 +39,15 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
 <body>
 	<h1>Login</h1>
 
-	<?php if($is_invalid): ?>
+	<?php if($is_invalid): ?><!--server side validation, to confirm if input on login form is in database-->
 		<em>Invalid login</em>
 	<?php endif; ?>
 
 	<form method="post">
-		<label for="email">Email</label>
+		<label for="email">Email</label><!--email section-->
 		<input type="email" name="email" id="email">
 
-		<label for="password">Password</label>
+		<label for="password">Password</label><!--password section-->
 		<input type="password" name="password" id="password">
 
 		<button>Log In</button>

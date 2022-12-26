@@ -1,4 +1,4 @@
-<?php require __DIR__ . "/session.php"; ?>
+<?php require __DIR__ . "/session.php"; ?><!--session must be started; user must be logged in-->
 
 <!DOCTYPE html>
 <html>

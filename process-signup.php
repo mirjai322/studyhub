@@ -1,6 +1,6 @@
 <?php
 
-//validation
+// server side validation
 if(empty($_POST["name"])){
 	die("Name is required");
 }
@@ -34,7 +34,7 @@ $mysqli = require __DIR__ . "/database.php";
 $sql = "INSERT INTO user (name, email, password_hash) VALUES (?, ?, ?)";
 $stmt = $mysqli->stmt_init(); 
 
-if(! $stmt->prepare($sql)){//preparing sql statement for execution -- catch any syntax errors in the sql method (if method returns false, then there is problem)
+if(! $stmt->prepare($sql)){ 
 	die("SQL error: " . $mysqli->error); //error property of sql object
 }
 
@@ -51,7 +51,7 @@ catch (Exception $e) {
     echo $e->getMessage();
 }
 
-/* //figure out how to make it display email already taken if it is duplicate entry in error field
+/* //display email already taken if it is duplicate entry in error field
 
 if($mysqli->errorno === 1062){
 	die("Email already taken");

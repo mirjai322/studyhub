@@ -17,18 +17,18 @@ if(isset($_SESSION["user_id"])){
 	<title>Home</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
-  <style>
+  <style>/*internal style*/
   	background-color: #ffd9d9;
   	color: #fffafa;
   </style>
 </head>
 <body>
 	<h1>Home</h1>
-	<?php if(isset($user)): ?>
+	<?php if(isset($user)): ?><!--if there is user who is logged in, welcome by username-->
 		<p>Hello <?= htmlspecialchars($user["name"])?></p>
-		<p><a href="logout.php">Log out</a></p>
+		<p><a href="logout.php">Log out</a></p><!--logout button-->
 	<?php else: ?>
-		<p><a href="login.php">Log In</a> or <a href="signup.html">Sign up</a></p>
+		<p><a href="login.php">Log In</a> or <a href="signup.html">Sign up</a></p><!--if not logged in -> login -->
 	<?php endif; ?>
 </body>
 </html>
